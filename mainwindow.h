@@ -14,10 +14,13 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 private slots:
+    void readSettings();
+    void writeSettings();
     void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
     int licznik;
+    int licznik2;
 };
 #endif // MAINWINDOW_H
