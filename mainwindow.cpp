@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QDebug>
 #include <QSettings>
+#include <QMessageBox>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -44,3 +45,20 @@ void MainWindow::writeSettings() {
     settings.endGroup();
 }
 
+void MainWindow::on_actionZamknij_triggered()
+{
+    close();
+}
+
+
+void MainWindow::on_actionPomoc_triggered()
+{
+    QMessageBox::information(this, "To my", "Jest to kliker ktory zapisuje rekord jestesmy super");
+
+}
+
+
+void MainWindow::on_actiono_Qt_triggered()
+{
+    QApplication::aboutQt();
+}

@@ -17,7 +17,9 @@ private slots:
     void readSettings();
     void writeSettings();
     void on_pushButton_clicked();
-
+    void on_actionZamknij_triggered();
+    void on_actionPomoc_triggered();
+    void on_actiono_Qt_triggered();
 private:
     Ui::MainWindow *ui;
     int licznik;
